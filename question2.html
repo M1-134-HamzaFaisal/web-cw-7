@@ -17,6 +17,26 @@
          لكل سائق object <= arrayحط داخل ال
          حط اسم السائق وعمره object داخل كل
       */
+     let drivers=[
+{ name:`mohammed` , age:`25`},
+{ name:`Naji` , age:`30`},
+{ name:`hamza` , age:`25`}
+
+     ]
+function licenseTest(){
+for (let index = 0; index < drivers.length; index++) {
+  const element = drivers[index];
+  if(element.age>18){
+console.log(`تفضل رخصتك${element.name}`)
+  }else{
+    console.log(`نعتذر منك المه اليايه ان شاء الله`)
+
+  }
+
+}
+}
+
+licenseTest()
 
       // 2
       /* licenseTest() اسمها function قم بتعريف
